@@ -1,6 +1,8 @@
 
 SODIUM_EXPORT = \
 	sodium.h \
+	aes.h \
+	gcm.h \
 	sodium/core.h \
 	sodium/crypto_aead_aes256gcm.h \
 	sodium/crypto_aead_chacha20poly1305.h \
