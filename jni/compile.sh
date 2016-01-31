@@ -15,7 +15,8 @@ rm -f *.c
 rm -f *.so
 
 #swig -java sodium.i
-swig -java -package org.abstractj.kalium -outdir ../src/main/java/org/abstractj/kalium sodium.i
+swig -java -package org.abstractj.kalium -outdir ../src/main/java/org/abstractj/kalium aesgcm.i
+swig -csharp -package org.abstractj.kalium -outdir ../src/main/java/org/abstractj/kalium aesgcm.i
 
 
 jnilib=libkaliumjni.so
