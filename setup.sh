@@ -69,7 +69,7 @@ function setup_libsodium {
     #git submodule init
     #git submodule update
 
-    cd libsodium
+    cd libsodium_crypto
 
     # use stable branch
     # git fetch && git checkout origin/stable
