@@ -64,10 +64,10 @@ function swig_cleanup {
 # install libsodium from the repository
 #
 function setup_libsodium {
-    rm -rf libsodium
+    #rm -rf libsodium
 
-    git submodule init
-    git submodule update
+    #git submodule init
+    #git submodule update
 
     cd libsodium
 
@@ -101,17 +101,19 @@ function compile_jni {
 }
 
 # Add auto-cleanup before the script runs
-ndk_cleanup
-swig_cleanup
+#ndk_cleanup
+#swig_cleanup
 
 # Download and install
-ndk_setup
-swig_setup
+#TODO do a check first and then install
+#ndk_setup
+#swig_setup
 
 # Compile the libraries
 setup_libsodium
 compile_jni
 
+#TODO switch passed in
 # Cleanup
-ndk_cleanup
-swig_cleanup
+#ndk_cleanup
+#swig_cleanup
