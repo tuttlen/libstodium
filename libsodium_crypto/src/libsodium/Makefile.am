@@ -2,55 +2,13 @@ lib_LTLIBRARIES = \
 	libsodium.la
 
 libsodium_la_SOURCES = \
-	crypto_aead/chacha20poly1305/sodium/aead_chacha20poly1305.c \
-	crypto_auth/crypto_auth.c \
-	crypto_auth/hmacsha256/auth_hmacsha256_api.c \
-	crypto_auth/hmacsha256/cp/hmac_hmacsha256.c \
-	crypto_auth/hmacsha256/cp/verify_hmacsha256.c \
-	crypto_auth/hmacsha512/auth_hmacsha512_api.c \
-	crypto_auth/hmacsha512/cp/hmac_hmacsha512.c \
-	crypto_auth/hmacsha512/cp/verify_hmacsha512.c \
-	crypto_auth/hmacsha512256/auth_hmacsha512256_api.c \
-	crypto_auth/hmacsha512256/cp/hmac_hmacsha512256.c \
-	crypto_auth/hmacsha512256/cp/verify_hmacsha512256.c \
-	crypto_box/crypto_box.c \
-	crypto_box/crypto_box_easy.c \
-	crypto_box/crypto_box_seal.c \
 	crypto_box/curve25519xsalsa20poly1305/box_curve25519xsalsa20poly1305_api.c \
 	crypto_box/curve25519xsalsa20poly1305/ref/after_curve25519xsalsa20poly1305.c \
 	crypto_box/curve25519xsalsa20poly1305/ref/before_curve25519xsalsa20poly1305.c \
 	crypto_box/curve25519xsalsa20poly1305/ref/box_curve25519xsalsa20poly1305.c \
 	crypto_box/curve25519xsalsa20poly1305/ref/keypair_curve25519xsalsa20poly1305.c \
-	crypto_core/curve25519/ref10/base.h \
-	crypto_core/curve25519/ref10/base2.h \
-	crypto_core/curve25519/ref10/curve25519_ref10.c \
-	crypto_core/curve25519/ref10/curve25519_ref10.h \
-	crypto_core/hsalsa20/ref2/core_hsalsa20.c \
-	crypto_core/hsalsa20/core_hsalsa20_api.c \
 	crypto_core/salsa20/ref/core_salsa20.c \
 	crypto_core/salsa20/core_salsa20_api.c \
-	crypto_generichash/crypto_generichash.c \
-	crypto_generichash/blake2/generichash_blake2_api.c \
-	crypto_generichash/blake2/ref/blake2-impl.h \
-	crypto_generichash/blake2/ref/blake2.h \
-	crypto_generichash/blake2/ref/blake2b-compress-ref.c \
-	crypto_generichash/blake2/ref/blake2b-load-sse2.h \
-	crypto_generichash/blake2/ref/blake2b-load-sse41.h \
-	crypto_generichash/blake2/ref/blake2b-ref.c \
-	crypto_generichash/blake2/ref/blake2b-round.h \
-	crypto_generichash/blake2/ref/generichash_blake2b.c \
-	crypto_hash/crypto_hash.c \
-	crypto_hash/sha256/hash_sha256_api.c \
-	crypto_hash/sha256/cp/hash_sha256.c \
-	crypto_hash/sha512/hash_sha512_api.c \
-	crypto_hash/sha512/cp/hash_sha512.c \
-	crypto_onetimeauth/crypto_onetimeauth.c \
-	crypto_onetimeauth/poly1305/onetimeauth_poly1305.c \
-	crypto_onetimeauth/poly1305/onetimeauth_poly1305.h \
-	crypto_onetimeauth/poly1305/donna/poly1305_donna.h \
-	crypto_onetimeauth/poly1305/donna/poly1305_donna32.h \
-	crypto_onetimeauth/poly1305/donna/poly1305_donna64.h \
-	crypto_onetimeauth/poly1305/donna/poly1305_donna.c \
 	crypto_pwhash/scryptsalsa208sha256/crypto_scrypt-common.c \
 	crypto_pwhash/scryptsalsa208sha256/crypto_scrypt.h \
 	crypto_pwhash/scryptsalsa208sha256/scrypt_platform.c \
@@ -62,23 +20,12 @@ libsodium_la_SOURCES = \
 	crypto_scalarmult/crypto_scalarmult.c \
 	crypto_scalarmult/curve25519/scalarmult_curve25519.c \
 	crypto_scalarmult/curve25519/scalarmult_curve25519.h \
-	crypto_secretbox/crypto_secretbox.c \
-	crypto_secretbox/crypto_secretbox_easy.c \
-	crypto_secretbox/xsalsa20poly1305/secretbox_xsalsa20poly1305_api.c \
-	crypto_secretbox/xsalsa20poly1305/ref/box_xsalsa20poly1305.c \
-	crypto_shorthash/crypto_shorthash.c \
-	crypto_shorthash/siphash24/shorthash_siphash24_api.c \
-	crypto_shorthash/siphash24/ref/shorthash_siphash24.c \
 	crypto_sign/crypto_sign.c \
 	crypto_sign/ed25519/sign_ed25519_api.c \
 	crypto_sign/ed25519/ref10/keypair.c \
 	crypto_sign/ed25519/ref10/open.c \
 	crypto_sign/ed25519/ref10/sign.c \
 	crypto_stream/crypto_stream.c \
-	crypto_stream/chacha20/stream_chacha20.c \
-	crypto_stream/chacha20/stream_chacha20.h \
-	crypto_stream/chacha20/ref/stream_chacha20_ref.h \
-	crypto_stream/chacha20/ref/stream_chacha20_ref.c \
 	crypto_stream/salsa20/stream_salsa20_api.c \
 	crypto_stream/xsalsa20/stream_xsalsa20_api.c \
 	crypto_stream/xsalsa20/ref/stream_xsalsa20.c \
