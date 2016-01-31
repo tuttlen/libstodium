@@ -1,3 +1,12 @@
+/* sodium.i */
+%module Sodium
+
+%include "typemaps.i"
+%include "stdint.i"
+%include "arrays_java.i"
+%include "carrays.i"
+%include "various.i"
+
 /* Basic mappings */
 %apply int {unsigned long long};
 %apply long[] {unsigned long long *};
